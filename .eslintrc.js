@@ -26,5 +26,18 @@ module.exports = {
     'template-curly-spacing': [2, 'always'],
     'arrow-parens': 0,
     'curly': 0,
-  }
+    'vue/script-indent': [
+      'error',
+      4,
+      { 'baseIndent': 1 }
+    ],
+  },
+  'overrides': [
+    {
+      'files': ['*.vue'],
+      'rules': {
+        'indent': 'off'
+      }
+    }
+  ]
 }

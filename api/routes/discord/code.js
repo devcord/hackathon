@@ -38,7 +38,6 @@ module.exports = async ( req, res, { discord, mongo, encrypt, token } ) => {
             last_signed_in: Date.now(),
             id,
             admin: false,
-            verified: false,
         }
 
         await Users.insert(currentUser)
