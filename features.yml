@@ -1,0 +1,44 @@
+Dashboard:
+  People:
+    # invidivual designers/engineers
+    Post:
+      - summary [< 100 chars]
+      - markdown description textarea [average 500-2k chars?]
+      - tags input
+      
+    Table:
+      # lists all individuals, with pagination 
+      - search bar [tags, includes x]
+      - random/by username [ascending/descending]
+      - displays user avatar
+
+  Projects:
+    Post:
+      - project title
+      - summary [< 100 chars]
+      - markdown description textarea [average 500-2k chars?]
+      - tags input
+
+    Submit:
+      - Git link to project (doesn't have to be code?)
+      - website [optional]
+
+    Table:
+      # lists all projects, with pagination 
+      - search bar [tags, includes x]
+      - random/by title/by project name [ascending/descending]
+      - displays creator avatar
+
+  Profile:
+    Posts:
+      - toggle button for user post/project post
+      - edit button (returns to respective post page)
+      - delete button
+
+    - Displays 
+    - Log Out
+
+  Footer:
+    - contact email
+    - © Devcord 2019
+    - report an issue (https://github.com/Devcord/hackathon/issues)
