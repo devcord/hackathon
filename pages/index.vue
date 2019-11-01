@@ -1,7 +1,7 @@
 <template lang="pug">
     section.home
         .about.content
-            h1 Lorem Ipsum
+            h1 Accessibility Hackathon
             h3 Lorem ipsum dolor sit amet
 </template>
 

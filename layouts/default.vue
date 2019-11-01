@@ -43,6 +43,9 @@ main {
     color: #f4f4f4;
   }
 }
+.bold {
+    font-weight: 600;
+}
 h1 {
   font-size: 48px;
 }

@@ -1,12 +1,15 @@
 <template lang="pug">
-    nav
+    nav(:class="{ scrolled }")
         .content
             .nav--links
                 nuxt-link(to="/" tag="h2").logo
                     .inner #hack<span class="bold">the</span>cord
-                    .inner.slide.background--dark #hack<span class="bold">the</span>cord
+                    .inner.slide #hack<span class="bold">the</span>cord
 
-                nuxt-link(to="/") Home
+                a(href="https://devcord.com").sponsor sponsored by 
+                    span.bold Devcord
+
+                nuxt-link(to="/") About
                 nuxt-link(to="/teams") Teams
                 nuxt-link(to="/projects") Projects
                 nuxt-link(to="/individuals") Individuals
@@ -14,14 +17,36 @@
             //- a.join--button(href="https://discord.gg/devcord", title="Join 5000 others on devcord!")    Join us
 </template>
 
+<script>
+    export default {
+        data () {
+            return {
+                scrolled: false
+            }
+        },
+
+        mounted () {
+            window.addEventListener('scroll', () => {
+                Object.assign(this, { 
+                    scrolled: document.querySelector('html').scrollTop > 0
+                })
+            })
+        }
+    }
+</script>
+
 <style lang="sass" scoped>
-    nav     
+    nav
         display: flex    
         justify-content: center    
-        width: 100%    
-        background-color: #212121    
-        position: sticky    
+        width: 100%     
+        background-color: transparent
+        position: fixed
         top: 0   
+        transition: background-color 0.2s
+
+        &.scrolled
+            background-color: #212121   
 
         .content     
             display: flex    
@@ -34,6 +59,7 @@
         .nav--links
             display: flex
             width: 100%
+
             a     
                 padding: 0.5rem    
                 margin-right: 0.5rem    
@@ -60,16 +86,18 @@
             .logo     
                 display: flex    
                 padding: 0    
-                margin-right: auto    
                 font-weight: 200
                 cursor: pointer
                 position: relative
+                
 
                 .inner
                     height: 100%
                     display: flex
                     align-items: center
                     justify-content: center
+                    clip-path: inset(0 0 0 0)
+                    transition: clip-path 0.2s
 
                 .slide
                     position: absolute
@@ -79,11 +107,12 @@
                     clip-path: inset(100% 0 0 0)
                     transition: clip-path 0.2s
 
-                &:hover > .slide
-                    clip-path: inset(0 0 0 0)
+                &:hover
+                    .inner
+                        clip-path: inset(0 0 100% 0)
 
-                .bold
-                    font-weight: 600
+                    .slide
+                        clip-path: inset(0 0 0 0)
 
                 svg     
                     rect#black     
@@ -95,6 +124,19 @@
                             animation: fillRedUp normal forwards 0.2s    
                         
                     box-shadow: none    
+
+            .sponsor
+                font-size: 12px
+                margin-right: auto
+                font-weight: 200
+                opacity: 0.9
+
+                &:hover
+                    box-shadow: none
+
+                .bold
+                    margin: 0
+                    padding: 0
                     
         
     @media only screen and (max-width: 800px)     
