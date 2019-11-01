@@ -20,10 +20,8 @@
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap");
 body {
   margin: 0 auto;
-  font-family: "Poppins", "Arial Narrow", Arial, sans-serif;
   background-color: #111111;
   color: #f4f4f4
 }
