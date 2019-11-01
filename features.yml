@@ -14,7 +14,6 @@ Dashboard:
 
   Projects:
     Post:
-      - project title
       - summary [< 100 chars]
       - markdown description textarea [average 500-2k chars?]
       - tags input
