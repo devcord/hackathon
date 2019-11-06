@@ -5,7 +5,16 @@
             h3 Lorem ipsum dolor sit amet
 
         .collaborators.content
-            .collaborator( v-for="{ image, name, avatar } in Collaborators" )
+            h2 Collaborators:
+
+            a.collaborator.background--dark( 
+                v-for="{ invite, name, icon } in Collaborators" 
+                :href="invite" 
+                target="__blank"
+                :class="{ invite }" 
+            )
+                img( :src="icon" )
+                p.name {{ name }}
 
 </template>
 
@@ -14,7 +23,9 @@
 
     export default {
         data () {
-            
+            return {
+                Collaborators
+            }
         },
 
         async mounted ( ) {
@@ -25,12 +36,48 @@
 
 <style lang="sass">
     section.home
-        display: flex
-        justify-content: center
-
         .about
             height: 30rem
             display: flex
             flex-direction: column
             justify-content: center
+
+        .collaborators
+            display: flex
+            flex-wrap: wrap
+            justify-content: left
+            padding-bottom: 4rem
+
+            h2
+                width: 100%
+                text-align: left
+                margin: 0.5rem
+
+            .collaborator
+                display: flex
+                align-items: center
+                justify-content: left
+                width: 20rem
+                height: 7rem
+                padding: 1rem
+                margin: 0.5rem
+                border-radius: 5px
+
+                &.invite
+                    filter: brightness(100%)
+                    transition: filter 0.2s
+
+                    &:hover
+                        filter: brightness(110%)
+
+                img
+                    height: 100%
+                    margin-right: 1rem
+                    border-radius: 5px
+
+                .name
+                    color: white
+                    font-size: 1.2rem
+                    font-weight: 600
+                    pointer-events: none
 </style>

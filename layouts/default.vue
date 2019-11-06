@@ -38,7 +38,7 @@ main {
 .content {
   max-width: 1200px;
   width: 100%;
-  margin: 1rem;
+  margin: 1rem auto;
 }
 .background {
   &--dark {
