@@ -15,7 +15,12 @@
             Navigation,
             Cookie,
             Footer
-        }
+        },
+
+        async mounted () {
+            const { success, user } = await this.$store.dispatch('autologin')
+            if (success) console.log(user)
+        },
     }
 </script>
 
