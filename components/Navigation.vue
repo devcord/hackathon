@@ -14,7 +14,6 @@
                 //- nuxt-link(to="/projects") Projects
                 //- nuxt-link(to="/individuals") Individuals
                 //- nuxt-link(to="/account") Account
-            //- a.join--button(href="https://discord.gg/devcord", title="Join 5000 others on devcord!")    Join us
 </template>
 
 <script>

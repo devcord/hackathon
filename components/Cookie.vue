@@ -1,9 +1,9 @@
 <template lang="pug">
-div(v-if="showNotice")
-  .cookie
-    p This site uses cookies, please read our&nbsp;
-      router-link.highlighted(to="privacy-policy") Privacy policy.
-      button.highlighted(@click.preventDefault="hideCookieNotice" type="button") X
+    div(v-if="showNotice")
+        .cookie
+            p This site uses cookies, please read our&nbsp;
+            router-link.highlighted(to="privacy-policy") Privacy policy.
+            button.highlighted(@click.preventDefault="hideCookieNotice" type="button") X
 </template>
 
 <style lang="scss" scoped>
