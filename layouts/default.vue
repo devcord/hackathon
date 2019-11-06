@@ -1,7 +1,7 @@
 <template lang="pug">
   #app
     Navigation
-    Cookie
+    //- Cookie
     nuxt
     Footer
 </template>
