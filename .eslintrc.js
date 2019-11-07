@@ -6,10 +6,14 @@ module.exports = {
   },
   parserOptions: {
     parser: 'babel-eslint'
-  },
+  },    
+  plugins: [
+    'vue-a11y'
+  ],
   extends: [
     '@nuxtjs',
-    'plugin:nuxt/recommended'
+    'plugin:nuxt/recommended',
+    'plugin:vue-a11y/base'
   ],
   // add your custom rules here
   rules: {
@@ -32,7 +36,7 @@ module.exports = {
       { 'baseIndent': 1 }
     ],
   },
-  'overrides': [
+  overrides: [
     {
       'files': ['*.vue'],
       'rules': {
