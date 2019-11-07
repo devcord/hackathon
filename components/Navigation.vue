@@ -43,6 +43,7 @@
         position: fixed
         top: 0   
         transition: background-color 0.2s
+        z-index: 2
 
         &.scrolled
             background-color: #212121   

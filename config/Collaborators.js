@@ -11,4 +11,9 @@ export default [
         icon: require('~/assets/collaborators/designdrop.svg'),
         invite: 'https://discord.gg/tu3jRKM',
     },
+    {
+        name: 'UXhouse',
+        icon: require('~/assets/collaborators/uxhouse.png'),
+        invite: null,
+    },
 ]

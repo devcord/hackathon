@@ -1,7 +1,8 @@
 <template lang="pug">
   #app
     Navigation
-    //- Cookie
+    client-only
+        Cookie
     nuxt
     Footer
 </template>
@@ -36,9 +37,10 @@ main {
   flex-direction: column;
 }
 .content {
-  max-width: 1200px;
+  max-width: 1600px;
   width: 100%;
   margin: 1rem auto;
+  padding: 0 2rem;
 }
 .background {
   &--dark {

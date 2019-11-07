@@ -21,7 +21,8 @@ module.exports = {
     ],
 
     plugins: [
-        '~/plugins/api.js'
+        '~/plugins/api.js',
+        '~/plugins/markdown.js'
     ],
 
     buildModules: [
@@ -41,11 +42,18 @@ module.exports = {
     },
 
     build: {
-        extend (config, ctx) {
+        extend (config) {
+            config.module.rules.push(
+                {
+                    test: /\.md$/i,
+                    use: 'raw-loader',
+                },
+            )
         }
     },
     
     server: {
+        host: '0.0.0.0',
         port: 7777
     },
 }

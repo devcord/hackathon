@@ -1,8 +1,6 @@
 <template lang="pug">
     section.home
-        .about.content
-            h1 Accessibility Hackathon
-            h3 Lorem ipsum dolor sit amet
+        Markdown.about.content( :content="HomeContent" )
 
         .collaborators.content
             h2 Collaborators:
@@ -20,16 +18,19 @@
 
 <script>
     import Collaborators from '~/config/Collaborators.js'
+    import HomeContent from '~/config/HomeContent.md'
+    import Markdown from '~/components/Markdown'
 
     export default {
-        data () {
-            return {
-                Collaborators
-            }
+        components: {
+            Markdown,
         },
 
-        async mounted ( ) {
-            // console.log( await this.api('post/') )
+        data () {
+            return {
+                Collaborators,
+                HomeContent,
+            }
         },
     }
 </script>
@@ -37,10 +38,8 @@
 <style lang="sass">
     section.home
         .about
-            height: 30rem
-            display: flex
-            flex-direction: column
-            justify-content: center
+            padding-top: 4rem
+            padding-bottom: 4rem
 
         .collaborators
             display: flex

@@ -24,17 +24,21 @@
 <style lang="scss" scoped>
 footer {
   padding: 10vh 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
   .card {
+    min-width: 10rem;
     &s {
       display: flex;
     }
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin: 0 1rem;
+    margin: 1rem;
   }
 }
 a {
