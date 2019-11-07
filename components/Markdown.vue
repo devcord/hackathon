@@ -19,11 +19,14 @@
         *
             letter-spacing: 0.25px
 
-        h1, h2, h3, h4, h5, h6
+        h1
             margin-top: 3rem
 
+        h1, h2, h3, h4, h5, h6
+            margin-top: 2rem
+
         h2, h3, h4, h5, h6
-            opacity: 0.9
+            color: rgba(white, 0.9)
             margin-bottom: 0.1rem
 
         hr
@@ -31,14 +34,14 @@
             height: 2rem
 
         p
-            opacity: 0.7
+            color: rgba(white, 0.7)
             max-width: 60rem
-            text-align: justify
 
         a
-            color: white
-            border-bottom: 1px solid white
+            color: rgba(white, 0.7)
+            border-bottom: 1px solid rgba(white, 0.7)
 
             &:hover
-                border-color:
+                border-color: #f0134d
+                color: #f0134d
 </style>
