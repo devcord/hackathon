@@ -28,7 +28,7 @@
     "mongodb": "^3.5.9",
     "nuxt": "^2.13.0",
     "saslprep": "^1.0.3",
-    "uuid": "^8.1.0"
+    "uuid": "^8.2.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.0.0",
