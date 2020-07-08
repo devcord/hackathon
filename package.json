@@ -45,7 +45,7 @@
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
     "raw-loader": "^4.0.1",
-    "sass-loader": "^9.0.1",
+    "sass-loader": "^9.0.2",
     "vue-jest": "^4.0.0-0"
   }
 }
