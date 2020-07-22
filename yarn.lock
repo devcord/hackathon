@@ -4378,9 +4378,9 @@ expect@^26.1.0:
     jest-message-util "^26.1.0"
     jest-regex-util "^26.0.0"
 
-express-fingerprint@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/express-fingerprint/-/express-fingerprint-1.2.1.tgz#f4857e9be8db8d0f074ae3c0e6e347e518d96bdf"
+express-fingerprint@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/express-fingerprint/-/express-fingerprint-1.2.2.tgz#bd641a233b6b45096f9c393cf0ad8ae7db7d79a1"
   dependencies:
     async "^3.2.0"
     geoip-lite "^1.4.2"
