@@ -1562,15 +1562,15 @@
     webpack-node-externals "^2.5.0"
     webpackbar "^4.0.0"
 
-"@nuxtjs/axios@^5.12.0":
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/axios/-/axios-5.12.0.tgz#50692340e64ec838f167d292d59b1cc2a0e2dbef"
+"@nuxtjs/axios@^5.12.1":
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/axios/-/axios-5.12.1.tgz#e26f83bca926a135708deda258cd58b7dc1c958f"
   dependencies:
-    "@nuxtjs/proxy" "^2.0.0"
+    "@nuxtjs/proxy" "^2.0.1"
     axios "^0.19.2"
     axios-retry "^3.1.8"
     consola "^2.14.0"
-    defu "^2.0.4"
+    defu "^3.1.0"
 
 "@nuxtjs/eslint-config@^3.1.0":
   version "3.1.0"
@@ -1592,9 +1592,9 @@
     consola "^2.11.3"
     eslint-loader "^4.0.2"
 
-"@nuxtjs/proxy@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/proxy/-/proxy-2.0.0.tgz#cf19894eac721a2ad896293f241371f046db71e7"
+"@nuxtjs/proxy@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/proxy/-/proxy-2.0.1.tgz#2469b6e316311aa8c60d348502a54bfe6d5536aa"
   dependencies:
     consola "^2.11.3"
     http-proxy-middleware "^1.0.4"
@@ -3841,6 +3841,10 @@ defu@^1.0.0:
 defu@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/defu/-/defu-2.0.4.tgz#09659a6e87a8fd7178be13bd43e9357ebf6d1c46"
+
+defu@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/defu/-/defu-3.1.0.tgz#a6b5104cacc06aa1efa01923becddbedd32505e8"
 
 delayed-stream@~1.0.0:
   version "1.0.0"
