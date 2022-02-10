@@ -40,7 +40,7 @@
     "eslint-plugin-nuxt": ">=0.5.2",
     "eslint-plugin-vue-a11y": "^0.0.31",
     "jest": "^26.4.2",
-    "node-sass": "^4.14.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.3",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
